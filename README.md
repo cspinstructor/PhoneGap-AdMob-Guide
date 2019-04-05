@@ -1,14 +1,7 @@
-# A Blank PhoneGap App
+# PhoneGap AdmMob Guide
 
-## Usage
+### How to implement AdMob in your PhoneGap app
 
-### PhoneGap CLI
+Step by step guide tutorial style on implementing AdMob Banner, Interstitial and Rewarded Video Ads
 
-    $ phonegap create my-app --template blank
-
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
 

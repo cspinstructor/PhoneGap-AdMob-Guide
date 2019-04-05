@@ -1,4 +1,4 @@
-# PhoneGap AdmMob Guide
+# PhoneGap AdMob Guide
 
 ### How to implement AdMob in your PhoneGap app
 

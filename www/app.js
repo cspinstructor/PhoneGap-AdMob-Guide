@@ -13,10 +13,13 @@ function initApp() {
     .fail(function() {
       console.log('ajax panel error');
     });
+  getHomeContent();
+}
 
+function getHomeContent() {
   $.ajax('home.html')
     .done(function(home) {
-      $('#homecontent').html(home);
+      $('.ui-content').html(home);
       $('[data-role=listview]').listview();
     })
     .fail(function() {
@@ -24,24 +27,15 @@ function initApp() {
     });
 }
 
-function loadAboutContent() {
-  $('.ui-content').load('about.html');
-  $('#navbar-about').addClass('ui-btn-active');
-  $('#navbar-home, #navbar-test').removeClass('ui-btn-active');
-  window.scrollTo(0, 0);
-}
-
 function loadHomeContent() {
-  $('.ui-content').load('home.html');
-  $('#navbar-home').addClass('ui-btn-active');
-  $('#navbar-about, #navbar-test').removeClass('ui-btn-active');
+  getHomeContent();
+
   window.scrollTo(0, 0);
+  $('#top-title').html('PhoneGap AdMob');
 }
 
-function loadTestContent() {
-  $('.ui-content').load('test.html');
-  $('#navbar-test').addClass('ui-btn-active');
-  $('#navbar-home, #navbar-about').removeClass('ui-btn-active');
+function load1Content() {
+  $('.ui-content').load('1.html');
   window.scrollTo(0, 0);
 }
 

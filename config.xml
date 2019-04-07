@@ -1,12 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="pg.admob.guide" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PhoneGap AdMob Guide</name>
+<widget id="phone.gap.admob" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PhoneGap Admob Guide</name>
     <description>
-        A blank PhoneGap app.
+        How to implement AdMob in your PhoneGap app
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="ezipicapp@gmail.com" href="https://ezipicapp.blogspot.com/">
+        EziPic Apps
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="16" />
+        <allow-intent href="market:*" />
+    </platform>
+    
+    <preference name="DisallowOverscroll" value="true" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console" spec="~1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+
+    <preference name="orientation" value="portrait" />
+
+    <icon src="icon144.png" />
 </widget>

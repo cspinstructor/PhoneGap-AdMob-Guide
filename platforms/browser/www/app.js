@@ -39,6 +39,16 @@ function load1Content() {
   window.scrollTo(0, 0);
 }
 
+function load2Content() {
+  $('.ui-content').load('2.html');
+  window.scrollTo(0, 0);
+}
+
+function load3Content() {
+  $('.ui-content').load('3.html');
+  window.scrollTo(0, 0);
+}
+
 function handleOptions() {
   console.log('ok... from handleOptions()');
   loadHomeContent();

@@ -49,6 +49,11 @@ function load3Content() {
   window.scrollTo(0, 0);
 }
 
+function load4Content() {
+  $('.ui-content').load('4.html');
+  window.scrollTo(0, 0);
+}
+
 function handleOptions() {
   console.log('ok... from handleOptions()');
   loadHomeContent();

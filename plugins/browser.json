@@ -15,7 +15,14 @@
         },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "phone.gap.admob"
+        },
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "pg.adv.panel"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "pg.adv.panel"
+        }
+    }
 }

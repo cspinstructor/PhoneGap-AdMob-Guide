@@ -1,0 +1,50 @@
+<div role="main" class="ui-content">
+  <h4>6. Uploading to github</h4>
+  <p>
+    We need to upload our project to github.com so that we will be able to build
+    an apk file using build.phonegap.com. So, go to github.com and sign up for a
+    free account.
+  </p>
+  <p><img src="images/6-1.png" alt="" /></p>
+  <p>
+    In order to upload files to github.com we also need to download and install
+    git-scm. So, go to git-scm and download and install git. git is a CLI
+    (command line interface) tool used to communicate with github for purposes
+    of uploading or downloading files.
+  </p>
+  <p><img src="images/6-2.png" alt="" /></p>
+  <p>
+    Next, create a new repository in github and call it Test. Let your project
+    be Public so that you can use github for free. The Private setting is for
+    paid accounts. Then click on the green button: "Create Repository"
+  </p>
+  <p><img src="images/6-3.png" alt="" /></p>
+  <p>Copy the line indicated by the red arrow below.</p>
+  <p><img src="images/6-4.png" alt="" /></p>
+  <p>
+    Then open a cmd terminal and navigate to your project folder
+    C:\PhoneGapProjects\Test. Then issue the following commands:
+  </p>
+  <p>git init</p>
+  <p>git add .</p>
+  <p>git commit -m "first commit"</p>
+  <p>
+    git remote add origin https://github.com/../Test.git
+  </p>
+  <p>git push -u origin master</p>
+  <p>
+    Note that the line "git remote add origin..." will be different for you.
+    Just use the line you copied from github above. Also note that there is a
+    space between "git add" and the dot.
+  </p>
+  <p>
+    Next refresh your github page and click on the green button: "Clone or
+    Download". Then click on the copy to clipboard icon as shown in red below:
+  </p>
+  <p><img src="images/6-5.png" alt="" /></p>
+  <p>
+    This concludes this lesson. We will be using the clipboard link to build an
+    apk file using build.phonegap.com in the next lesson.
+  </p>
+</div>
+<!-- /content -->

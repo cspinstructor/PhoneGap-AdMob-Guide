@@ -59,6 +59,11 @@ function load5Content() {
   window.scrollTo(0, 0);
 }
 
+function load6Content() {
+  $('.ui-content').load('6.html');
+  window.scrollTo(0, 0);
+}
+
 function handleOptions() {
   console.log('ok... from handleOptions()');
   loadHomeContent();

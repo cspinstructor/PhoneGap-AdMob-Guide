@@ -69,6 +69,21 @@ function load7Content() {
   window.scrollTo(0, 0);
 }
 
+function load8Content() {
+  $('.ui-content').load('8.html');
+  window.scrollTo(0, 0);
+}
+
+function load9Content() {
+  $('.ui-content').load('9.html');
+  window.scrollTo(0, 0);
+}
+
+function load10Content() {
+  $('.ui-content').load('10.html');
+  window.scrollTo(0, 0);
+}
+
 function handleOptions() {
   console.log('ok... from handleOptions()');
   loadHomeContent();

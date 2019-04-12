@@ -1,0 +1,54 @@
+<div role="main" class="ui-content">
+  <h4>9. Adding AdMob</h4>
+  <p>
+    Add a new file call ads.js to the folder www:
+  </p>
+  <p><img src="images/9-1.png" alt="" /></p>
+  <p>You can get the ads.js file here bit.ly/2Uh2BpD</p>
+  <p>
+    If you take a look at the ads.js file, it contains the test Ads for banner,
+    interstitial and rewarded video:
+  </p>
+  <p><img src="images/9-2.png" alt="" /></p>
+  <p>
+    These test ads are from Google AdMob website: bit.ly/2Z9ijq7 When you use
+    these test ads, you are at liberty to click on them to test your ads
+    implementation to ensure that they are working as expected. Then, open the
+    index.html file and add the reference to ads.js as indicated by the red
+    arrow:
+  </p>
+  <p><img src="images/9-3.png" alt="" /></p>
+  <p>Next, open the app.js file and delete all the functions therein:</p>
+  <p><img src="images/9-4.png" alt="" /></p>
+  <p>and replace it with this code:</p>
+  <p><img src="images/9-4b.png" alt="" /></p>
+  <p>
+    The event handlers are already in the file ads.js. The code in app.js will
+    initialize the ads contained in the other file ads.js. Note that AdMob ads
+    cannot be tested in the Chrome device emulator, we need to build the apk and
+    test it on the nox player.
+  </p>
+  <p>
+    The next step is to push to github and rebuild it with build.phonegap.com.
+    Open a terminal, go to your project folder 'C:\PhoneGapProjects\Test'. Then
+    type in the command: "git add .", followed by "git commit -m 'update'", and
+    finally "git push".
+  </p>
+  <p>Then, go to build.phonegap.com and click on the button: "Update code":</p>
+  <p><img src="images/9-5.png" alt="" /></p>
+  <p>followed by the button: "Pull latest"</p>
+  <p><img src="images/9-6.png" alt="" /></p>
+  <p>
+    After build has completed, download the apk and transfer to nox player and
+    click on the 3 buttons one by one and enjoy your test ads:
+  </p>
+  <p><img src="images/9-7.png" alt="" /></p>
+  <p><img src="images/9-8.png" alt="" /></p>
+  <p><img src="images/9-9.png" alt="" /></p>
+  <p>
+    Congratulations! You now know how to implement AdMob Ads. If you want to
+    deploy it to Google Play you just need to substitute the ads will live ads
+    which you can get through your AdMob login account.
+  </p>
+</div>
+<!-- /content -->

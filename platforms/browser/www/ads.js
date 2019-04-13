@@ -32,7 +32,7 @@ function initAd() {
     bgColor: 'black', // color name, or '#RRGGBB'
     // x: integer,		// valid when set position to 0 / POS_XY
     // y: integer,		// valid when set position to 0 / POS_XY
-    isTesting: true, // set to true, to receiving test ad for testing purpose
+    isTesting: false, // set to true, to receiving test ad for testing purpose
     autoShow: false // auto show interstitial ad when loaded, set to false if prepare/show
   };
   AdMob.setOptions(defaultOptions);
@@ -54,20 +54,20 @@ function initAd() {
 function registerAdEvents() {
   // new events, with variable to differentiate: adNetwork, adType, adEvent
   // comment out for production
-  document.addEventListener('onAdFailLoad', function(data) {
-    alert(
-      'error: ' +
-        data.error +
-        ', reason: ' +
-        data.reason +
-        ', adNetwork:' +
-        data.adNetwork +
-        ', adType:' +
-        data.adType +
-        ', adEvent:' +
-        data.adEvent
-    ); // adType: 'banner' or 'interstitial' or 'rewardvideo'
-  });
+  // document.addEventListener('onAdFailLoad', function(data) {
+  //   alert(
+  //     'error: ' +
+  //       data.error +
+  //       ', reason: ' +
+  //       data.reason +
+  //       ', adNetwork:' +
+  //       data.adNetwork +
+  //       ', adType:' +
+  //       data.adType +
+  //       ', adEvent:' +
+  //       data.adEvent
+  //   );
+  // });
   document.addEventListener('onAdLoaded', function(data) {});
   document.addEventListener('onAdPresent', function(data) {});
   document.addEventListener('onAdLeaveApp', function(data) {});

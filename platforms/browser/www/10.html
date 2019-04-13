@@ -8,17 +8,58 @@
     2048 -validity 10000
   </p>
   <p>
+    If you get the error saying keytool not found, you need to add the path to
+    the java binaries to your "path" environment variable.
+  </p>
+  <p>On my Windows10 machine, java binaries are installed in:</p>
+  <p><img src="images/10-0a.png" alt="" /></p>
+  <p>
+    Follow the steps below to add the java binary path to your "path"
+    environment variable:
+  </p>
+  <p><img src="images/10-0b.png" alt="" /></p>
+  <p><img src="images/10-0c.png" alt="" /></p>
+  <p><img src="images/10-0d.png" alt="" /></p>
+  <p>
+    After adding the java binary path to the environment variable, you need to
+    close your cmd terminal and reopen again. Then go to the folder where you
+    want to create your new keystore and execute the command below:
+  </p>
+  <p>
+    keytool -genkey -v -keystore Test.keystore -alias Test -keyalg RSA -keysize
+    2048 -validity 10000
+  </p>
+  <p>
     Replace Test with your own preferred name. After the keystore is generated,
     upload it to build.phonegap.com following the steps in the picture below:
   </p>
   <p><img src="images/10-1.png" alt="" /></p>
   <p>
+    Next, edit your ads.js file to set "isTesting: false". This will fetch live
+    ads from AdMob.
+  </p>
+  <p><img src="images/10-2.png" alt="" /></p>
+
+  <p>
     Then, login to apps.admob.com and generate 3 ad units: banner, interstitial
     and rewarded video. Copy the Ad ids and replace the test ad ids found in the
-    ads.js file with the live ads id. Save your files, push to github and
-    rebuild in build.phonegap.com. But before you build, select the key and
-    enter your password to unlock it. Once the build is completed download the
-    apk and publish it on google play.
+    ads.js file with the live ads id. Then edit your config.xml file to add the
+    APP_ID which you generated from your AdMob console:
+  </p>
+
+  <p><img src="images/10-3.png" alt="" /></p>
+  <p>
+    Note that you can download a sample config.xml file here: bit.ly/2UJqASB
+  </p>
+
+  <p>
+    Save your files, push to github and rebuild in build.phonegap.com. But
+    before you build, select the key and enter your password to unlock it:
+  </p>
+  <p><img src="images/10-4.png" alt="" /></p>
+  <p><img src="images/10-5.png" alt="" /></p>
+  <p>
+    Once the build is completed download the apk and publish it on google play.
   </p>
   <p>
     With that we have come to the end of this course. Congratulations on your

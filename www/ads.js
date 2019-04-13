@@ -54,20 +54,20 @@ function initAd() {
 function registerAdEvents() {
   // new events, with variable to differentiate: adNetwork, adType, adEvent
   // comment out for production
-  document.addEventListener('onAdFailLoad', function(data) {
-    alert(
-      'error: ' +
-        data.error +
-        ', reason: ' +
-        data.reason +
-        ', adNetwork:' +
-        data.adNetwork +
-        ', adType:' +
-        data.adType +
-        ', adEvent:' +
-        data.adEvent
-    ); // adType: 'banner' or 'interstitial' or 'rewardvideo'
-  });
+  // document.addEventListener('onAdFailLoad', function(data) {
+  //   alert(
+  //     'error: ' +
+  //       data.error +
+  //       ', reason: ' +
+  //       data.reason +
+  //       ', adNetwork:' +
+  //       data.adNetwork +
+  //       ', adType:' +
+  //       data.adType +
+  //       ', adEvent:' +
+  //       data.adEvent
+  //   );
+  // });
   document.addEventListener('onAdLoaded', function(data) {});
   document.addEventListener('onAdPresent', function(data) {});
   document.addEventListener('onAdLeaveApp', function(data) {});

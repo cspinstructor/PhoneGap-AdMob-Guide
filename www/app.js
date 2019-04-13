@@ -28,9 +28,6 @@ function getHomeContent() {
     .fail(function() {
       console.log('ajax home content error');
     });
-
-  //--- admob ---
-  showBannerAd();
 }
 
 function loadHomeContent() {
@@ -38,6 +35,9 @@ function loadHomeContent() {
 
   window.scrollTo(0, 0);
   $('#top-title').html('PhoneGap AdMob');
+
+  //--- admob ---
+  showBannerAd();
 }
 
 function load1Content() {
